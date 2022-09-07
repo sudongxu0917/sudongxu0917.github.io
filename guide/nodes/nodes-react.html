@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React | 小苏同学</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="前端程序员一枚">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f93fd0e.css" as="style"><link rel="preload" href="/assets/js/app.e3beb18f.js" as="script"><link rel="preload" href="/assets/js/2.60db63f0.js" as="script"><link rel="preload" href="/assets/js/29.858b2ac2.js" as="script"><link rel="prefetch" href="/assets/js/10.74f408d9.js"><link rel="prefetch" href="/assets/js/11.567bfedc.js"><link rel="prefetch" href="/assets/js/12.af97bedb.js"><link rel="prefetch" href="/assets/js/13.2aa17fa8.js"><link rel="prefetch" href="/assets/js/14.0b0bb33b.js"><link rel="prefetch" href="/assets/js/15.2a467c08.js"><link rel="prefetch" href="/assets/js/16.8b150338.js"><link rel="prefetch" href="/assets/js/17.d521ba2f.js"><link rel="prefetch" href="/assets/js/18.97c4a925.js"><link rel="prefetch" href="/assets/js/19.9274d07b.js"><link rel="prefetch" href="/assets/js/20.9770caa2.js"><link rel="prefetch" href="/assets/js/21.b878ae26.js"><link rel="prefetch" href="/assets/js/22.3f46ca7d.js"><link rel="prefetch" href="/assets/js/23.d1bdec46.js"><link rel="prefetch" href="/assets/js/24.c22c885d.js"><link rel="prefetch" href="/assets/js/25.f4c006d7.js"><link rel="prefetch" href="/assets/js/26.7767d6f7.js"><link rel="prefetch" href="/assets/js/27.dbecb70a.js"><link rel="prefetch" href="/assets/js/28.9ae2438c.js"><link rel="prefetch" href="/assets/js/3.6d2f3d29.js"><link rel="prefetch" href="/assets/js/30.b7a9e859.js"><link rel="prefetch" href="/assets/js/31.cf51b698.js"><link rel="prefetch" href="/assets/js/32.088bb270.js"><link rel="prefetch" href="/assets/js/33.19e7419f.js"><link rel="prefetch" href="/assets/js/34.bd98c2ba.js"><link rel="prefetch" href="/assets/js/35.91439357.js"><link rel="prefetch" href="/assets/js/36.b88d4a8b.js"><link rel="prefetch" href="/assets/js/4.f23d3de1.js"><link rel="prefetch" href="/assets/js/5.211192f6.js"><link rel="prefetch" href="/assets/js/6.79c3a8d6.js"><link rel="prefetch" href="/assets/js/7.a4f5f042.js"><link rel="prefetch" href="/assets/js/8.0c8fcf91.js"><link rel="prefetch" href="/assets/js/9.1280bc38.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f93fd0e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小苏同学</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/nodes/html.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/guide/interview/h5c3.html" class="nav-link">
+  面试手记
+</a></div><div class="nav-item"><a href="/guide/written/js.html" class="nav-link">
+  笔试手记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          博客
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/course/VuePress.html" class="nav-link">
+  VuePress项目部署
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="扩展" class="dropdown-title"><span class="title">扩展</span> <span class="arrow down"></span></button> <button type="button" aria-label="扩展" class="mobile-dropdown-title"><span class="title">扩展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/extend/ajax&amp;axios.html" class="nav-link">
+  ajax和axios
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具箱" class="dropdown-title"><span class="title">工具箱</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具箱" class="mobile-dropdown-title"><span class="title">工具箱</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          在线编辑
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.bitbug.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ico图标制作
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="http://www.spritecow.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  精灵图测量
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          程序员社区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://juejin.im/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://blog.csdn.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://segmentfault.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  思否
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/nodes/html.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/guide/interview/h5c3.html" class="nav-link">
+  面试手记
+</a></div><div class="nav-item"><a href="/guide/written/js.html" class="nav-link">
+  笔试手记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          博客
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/course/VuePress.html" class="nav-link">
+  VuePress项目部署
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="扩展" class="dropdown-title"><span class="title">扩展</span> <span class="arrow down"></span></button> <button type="button" aria-label="扩展" class="mobile-dropdown-title"><span class="title">扩展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/guide/extend/ajax&amp;axios.html" class="nav-link">
+  ajax和axios
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具箱" class="dropdown-title"><span class="title">工具箱</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具箱" class="mobile-dropdown-title"><span class="title">工具箱</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          在线编辑
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.bitbug.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ico图标制作
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="http://www.spritecow.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  精灵图测量
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          程序员社区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://juejin.im/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://blog.csdn.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://segmentfault.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  思否
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/nodes/nodes-html.html" class="sidebar-link">HTML</a></li><li><a href="/guide/nodes/nodes-css.html" class="sidebar-link">css</a></li><li><a href="/guide/nodes/nodes-mobile_web.html" class="sidebar-link">移动web</a></li><li><a href="/guide/nodes/nodes-js.html" class="sidebar-link">js</a></li><li><a href="/guide/nodes/nodes-es6.html" class="sidebar-link">ES6</a></li><li><a href="/guide/nodes/nodes-jq.html" class="sidebar-link">jQuery</a></li><li><a href="/guide/nodes/nodes-node.html" class="sidebar-link">Node.js</a></li><li><a href="/guide/nodes/nodes-webpack.html" class="sidebar-link">webpack</a></li><li><a href="/guide/nodes/nodes-git.html" class="sidebar-link">git</a></li><li><a href="/guide/nodes/nodes-vue.html" class="sidebar-link">vue</a></li><li><a href="/guide/nodes/nodes-weapp.html" class="sidebar-link">小程序</a></li><li><a href="/guide/nodes/nodes-uniapp.html" class="sidebar-link">uniapp</a></li><li><a href="/guide/nodes/nodes-typescript.html" class="sidebar-link">TypeScript</a></li><li><a href="/guide/nodes/nodes-react.html" aria-current="page" class="active sidebar-link">React</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#_1-react相关介绍" class="sidebar-link">1. React相关介绍</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#_1-react特点" class="sidebar-link">1. React特点</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#_2-环境搭建" class="sidebar-link">2. 环境搭建</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#组件化开发" class="sidebar-link">组件化开发</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#定义组件" class="sidebar-link">定义组件</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#引入组件" class="sidebar-link">引入组件</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#注意" class="sidebar-link">注意：</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#语法糖" class="sidebar-link">语法糖</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#科普" class="sidebar-link">科普</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#jsx-和-html-区别" class="sidebar-link">jsx 和 html 区别</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#引入方式" class="sidebar-link">引入方式</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#插值语法" class="sidebar-link">插值语法</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#循环" class="sidebar-link">循环</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#事件绑定" class="sidebar-link">事件绑定</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#constructor" class="sidebar-link">constructor</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#双向绑定" class="sidebar-link">双向绑定</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#父子传值" class="sidebar-link">父子传值</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#父传子" class="sidebar-link">父传子</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#子传父" class="sidebar-link">子传父</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#组件的生命周期" class="sidebar-link">组件的生命周期</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#修改阶段的生命周期" class="sidebar-link">修改阶段的生命周期</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#销毁阶段的生命周期" class="sidebar-link">销毁阶段的生命周期</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#context上下文传值" class="sidebar-link">context上下文传值</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#上下传参" class="sidebar-link">上下传参</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#下往上传" class="sidebar-link">下往上传</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#函数式组件" class="sidebar-link">函数式组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#hook-响应式数据" class="sidebar-link">Hook 响应式数据</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#父子组件传值" class="sidebar-link">父子组件传值</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#hook-多级组件传值" class="sidebar-link">Hook 多级组件传值</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#hook模拟生命周期" class="sidebar-link">Hook模拟生命周期</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#hook获取dom元素" class="sidebar-link">Hook获取DOM元素</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#hook-计算属性" class="sidebar-link">Hook 计算属性</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#路由" class="sidebar-link">路由</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#安装路由" class="sidebar-link">安装路由</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#jsx语法" class="sidebar-link">JSX语法</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#组件传值" class="sidebar-link">组件传值</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#生命周期函数" class="sidebar-link">生命周期函数</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#路由原理" class="sidebar-link">路由原理</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#react路由" class="sidebar-link">React路由</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#redux状态管理" class="sidebar-link">Redux状态管理</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#类组件" class="sidebar-link">类组件</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#函数式组件-2" class="sidebar-link">函数式组件</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#常用hooks" class="sidebar-link">常用Hooks</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#高阶组件" class="sidebar-link">高阶组件</a></li><li class="sidebar-sub-header"><a href="/guide/nodes/nodes-react.html#项目" class="sidebar-link">项目</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react"><a href="#react" class="header-anchor">#</a> React</h1> <h2 id="_1-react相关介绍"><a href="#_1-react相关介绍" class="header-anchor">#</a> 1. React相关介绍</h2> <h3 id="_1-react特点"><a href="#_1-react特点" class="header-anchor">#</a> 1. React特点</h3> <h4 id="a-声明式设计"><a href="#a-声明式设计" class="header-anchor">#</a> A. 声明式设计</h4> <p>react是面向数据编程，不需要直接去控制dom，你只要把数据操作好，react自己会去帮你操作dom，可以节省很多操作dom的代码。这就是声明式开发。</p> <h4 id="b-jsx语法"><a href="#b-jsx语法" class="header-anchor">#</a> B. JSX语法</h4> <p>JSX 是 JavaScript 语法的扩展。React 开发大部分使用 JSX 语法（在JSX中可以将HTML于JS混写）。</p> <h4 id="c-灵活"><a href="#c-灵活" class="header-anchor">#</a> C. 灵活</h4> <p>react所控制的dom就是id为root的dom，页面上的其他dom元素你页可以使用jq等其他框架 。可以和其他库并存。</p> <h4 id="d-使用虚拟dom、高效"><a href="#d-使用虚拟dom、高效" class="header-anchor">#</a> D. 使用虚拟DOM、高效</h4> <p>虚拟DOM其实本质就是一个JavaScript对象，当数据和状态发生了变化，都会被自动高效的同步到虚拟DOM中，最后再将仅变化的部分同步到DOM中（不需要整个DOM树重新渲染）</p> <h4 id="e-组件化开发"><a href="#e-组件化开发" class="header-anchor">#</a> E. 组件化开发</h4> <p>通过 React 构建组件，使得代码更加容易得到复用和维护，能够很好的应用在大项目的开发中。</p> <h4 id="f-单向数据流"><a href="#f-单向数据流" class="header-anchor">#</a> F. 单向数据流</h4> <p>react是单向数据流，父组件传递给子组件的数据，子组件能够使用，但是不能直接通过this.props修改。 这样让数据清晰代码容易维护。</p> <h3 id="_2-环境搭建"><a href="#_2-环境搭建" class="header-anchor">#</a> 2. 环境搭建</h3> <h4 id="a-全局安装脚手架-不推荐"><a href="#a-全局安装脚手架-不推荐" class="header-anchor">#</a> A .  全局安装脚手架（不推荐）</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">npm</span> <span class="token function">install</span> create-react-app <span class="token parameter variable">-g</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="b-通过npx搭建项目-官方推荐"><a href="#b-通过npx搭建项目-官方推荐" class="header-anchor">#</a> B. 通过npx搭建项目（官方推荐）</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>npx create-react-app <span class="token punctuation">[</span>ProjectName<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><h5 id="关于create-react-app"><a href="#关于create-react-app" class="header-anchor">#</a> 关于create-react-app</h5> <p><code>create-react-app</code> 是FaceBook的React团队官方出的一个构建React单页面应用的脚手架工具，它本身集成了 <code>webpack</code> ，并配置了一系列内置的 <code>loader</code> 和默认的npm脚本，可以很轻松的实现零配置就可以快速开发React的应用</p> <h5 id="关于npx"><a href="#关于npx" class="header-anchor">#</a> 关于npx</h5> <p>在 npm 的5.2.0版本开始，自动安装了npx</p> <p>npx是什么？ npx会帮助你执行依赖包里的二进制文件</p> <p>npx会自动查找当前依赖包中的可执行文件，如果找不到，就会去PATH里找。如果依然找不到，就会帮你安装</p> <p>该命令建议运行在node的12.13.0版本的基础上</p></blockquote> <h4 id="c-清除项目中的默认文件"><a href="#c-清除项目中的默认文件" class="header-anchor">#</a> C. 清除项目中的默认文件</h4> <p>删除掉新项目中 <code>src/</code> 文件夹下的所有文件</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 1.进入到src目录下</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">[</span>ProjectName<span class="token punctuation">]</span>/src
+
+<span class="token comment"># 2.删除src目录下的所有文件</span>
+<span class="token comment"># 如果你使用 Mac 或 Linux:</span>
+<span class="token function">rm</span> <span class="token parameter variable">-f</span> *
+<span class="token comment"># 如果你使用 Windows:</span>
+del *
+
+<span class="token comment"># 3.新建一个index.js文件</span>
+<span class="token function">touch</span> index.js
+
+<span class="token comment"># 4.然后回到项目文件夹</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+
+<span class="token comment"># 5.复制一下代码到index.js</span>
+<span class="token function">import</span> React from <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token function">import</span> ReactDOM from <span class="token string">'react-dom/client'</span><span class="token punctuation">;</span>
+<span class="token function">import</span> App from <span class="token string">&quot;./App&quot;</span>
+const root <span class="token operator">=</span> ReactDOM.createRoot<span class="token punctuation">(</span>document.getElementById<span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+root.render<span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>App /<span class="token operator">&gt;</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 6.运行项目</span>
+<span class="token function">npm</span> start
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h4 id="d-书写第一个组件"><a href="#d-书写第一个组件" class="header-anchor">#</a> D. 书写第一个组件</h4> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React from 'react'
+
+class App extends React.Component{
+  render(){
+    return (
+    	&lt;div&gt;我的第一个组件&lt;/div&gt;
+    )
+  }
+}
+
+export default App
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h4 id="e-vscode中jsx的编写优化"><a href="#e-vscode中jsx的编写优化" class="header-anchor">#</a> E. VSCode中JSX的编写优化</h4> <h2 id="组件化开发"><a href="#组件化开发" class="header-anchor">#</a> 组件化开发</h2> <p>获取DOM元素</p> <p>this.$refs.标签ref的值</p> <h3 id="定义组件"><a href="#定义组件" class="header-anchor">#</a> 定义组件</h3> <p>定义组件分为3步：</p> <ol><li><p>导入React核心模块</p></li> <li><p>定义组件类</p></li> <li><p>导出组件</p></li></ol> <p>在src目录下新建App.js文件：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>//1、导入React核心模块
+import React from 'react'
+
+//2、定义组件类
+class Hello extends React.Component{   //类
+    render(){     //函数
+        return (   //返回值
+            &lt;div&gt;
+                hello world !!! 我是组件
+            &lt;/div&gt;
+        )
+    }
+}
+
+//3、导出组件
+export default Hello
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="引入组件"><a href="#引入组件" class="header-anchor">#</a> 引入组件</h3> <p>在需要引入该组件的index.js中，导入，就可以直接使用这个组件了：</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>//import 组件名 from '文件路径'
+
+//1、导入Hello组件 (首字母必须大写)
+import Hello from './App' 
+
+ReactDOM.render(
+// 2、使用Hello组件 (首字母必须大写) 
+&lt;Hello /&gt; 
+, document.getElementById('root'));
+
+//注意：Hello是组件名，在使用的时候就应该写JSX标签写法，而不能直接写Hello
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="注意"><a href="#注意" class="header-anchor">#</a> 注意：</h3> <ol><li><p>定义组件的时候，return 后面只能有一个根标签，不能有多个，但这个标签内部可以有其他多个标签</p></li> <li><p>使用组件的时候，首字母必须大写</p></li> <li><p>如果最外层实在不想放置一层div根目录，可以使用 <strong><code>&lt;&gt;&lt;/&gt;</code></strong> 空标签代替</p></li></ol> <h2 id="语法糖"><a href="#语法糖" class="header-anchor">#</a> 语法糖</h2> <h3 id="科普"><a href="#科普" class="header-anchor">#</a> 科普</h3> <p>语法糖：一个功能，有两种完成方式，其中简单的写法。叫语法糖</p> <h3 id="jsx-和-html-区别"><a href="#jsx-和-html-区别" class="header-anchor">#</a> jsx 和 html 区别</h3> <ol><li>行内样式 必须是一个对象 第一个{}代表js环境 第二个 {} 代表 对象格式</li></ol> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;div style=&quot;{{width:&quot;200px&quot;}}&quot;&gt;&lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li><p>jsx中不要使用class，用className代替</p></li> <li><p>在jsx中使用js代码，必须要写在{}</p></li> <li><p>jsx 本地图片先引入 后使用</p></li> <li><p>其他的，都可以当做HTML语法来用</p></li></ol> <h3 id="引入方式"><a href="#引入方式" class="header-anchor">#</a> 引入方式</h3> <div class="language-react line-numbers-mode"><pre class="language-text"><code>//引入后立即执行
+import &quot;./Index.css&quot;
+
+//什么时候调用什么时候执行
+import Img from &quot;../static/logo.png&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="插值语法"><a href="#插值语法" class="header-anchor">#</a> 插值语法</h2> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React, { Component } from &quot;react&quot;;
+
+export default class App3 extends Component {
+  state = {
+    name: &quot;苏东旭&quot;,
+    num: 10,
+  };
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;p&gt;{this.state.name}&lt;/p&gt;
+        &lt;p&gt;{this.state.num}&lt;/p&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="循环"><a href="#循环" class="header-anchor">#</a> 循环</h2> <p>react只支持map遍历</p> <p>jsx中想写js ==&gt; {}</p> <p>js中想写jsx==&gt; return ()</p> <p>互相无限嵌套</p> <h2 id="事件绑定"><a href="#事件绑定" class="header-anchor">#</a> 事件绑定</h2> <p>事件函数就是类里面的一个普通方法</p> <p>react里面没有双向绑定，</p> <p>this.setState({num})</p> <p>onClick={this.state.xxx.bind(index)}</p> <h2 id="constructor"><a href="#constructor" class="header-anchor">#</a> constructor</h2> <div class="language-react line-numbers-mode"><pre class="language-text"><code>//
+state = {}
+
+//constructor 专门用来初始化
+constructor(){
+  super()
+  this.state = {}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="双向绑定"><a href="#双向绑定" class="header-anchor">#</a> 双向绑定</h2> <p>react不会问react双向绑定原理的，没有双向绑定</p> <p>复习小程序的双向绑定原理</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React, { Component } from &quot;react&quot;;
+
+export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      val: &quot;默认值&quot;,
+    };
+  }
+  inp(v) {
+    this.setState({
+      val: v.target.value,
+    });
+  }
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;input
+          type=&quot;text&quot;
+          value={this.state.val}
+          onChange={this.inp.bind(this)}
+        /&gt;
+        &lt;p&gt;{this.state.val}&lt;/p&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h2 id="父子传值"><a href="#父子传值" class="header-anchor">#</a> 父子传值</h2> <h3 id="父传子"><a href="#父传子" class="header-anchor">#</a> 父传子</h3> <blockquote><p>在父组件的子组件标签中设置自定义属性，并将要传递的数据作为其属性值</p> <p>在子组件中直接通过 <code>this.props.自定义属性</code> 获取父组件传递的数据</p></blockquote> <h4 id="父组件传值"><a href="#父组件传值" class="header-anchor">#</a> 父组件传值</h4> <ol><li><p>在父组件中引入子组件</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>// 组件名首字母一定大写
+import 子组件名 from &quot;子组件位置&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>直接用就行，无需注册</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>render(){
+	return(
+		&lt;div&gt;
+			&lt;子组件 自定义属性={父组件数据}&gt;&lt;/子组件&gt;
+		&lt;/div&gt;
+	)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div></li></ol> <h4 id="子组件接值"><a href="#子组件接值" class="header-anchor">#</a> 子组件接值</h4> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;p&gt;{this.props.自定义属性名}&lt;/p&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h5 id="子组件中限制默认值"><a href="#子组件中限制默认值" class="header-anchor">#</a> 子组件中限制默认值</h5> <div class="language-react line-numbers-mode"><pre class="language-text"><code>static defaultProps = {
+  自定义属性名:&quot;属性值&quot;,
+  title:&quot;默认值&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h5 id="子组件中限制类型"><a href="#子组件中限制类型" class="header-anchor">#</a> 子组件中限制类型</h5> <div class="language-react line-numbers-mode"><pre class="language-text"><code>// 引入限制类型的模块
+import PropTypes from &quot;prop-types&quot;
+
+// 限制类型 注意不能直接写类型，需要单独引入 限制类型 的模块
+static propTypes = {
+  自定义属性名:PropTypes.String
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="子传父"><a href="#子传父" class="header-anchor">#</a> 子传父</h3> <h4 id="子组件传值"><a href="#子组件传值" class="header-anchor">#</a> 子组件传值</h4> <blockquote><p>在子组件中为某元素添加点击事件，并将事件触发的方法进行声明，在方法内通过 <code>this.props.自定义事件(传递数据)</code></p> <p>在父组件的子组件标签中使用该自定义事件，不加on，自定义事件触发的方法在父组件中进行声明，方法的形参就是子组件传递过来的数据</p></blockquote> <ol><li><p>需要一个契机，为元素添加点击事件</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;button onClick={this.子组件方法.bind(this)}&gt;子组件按钮&lt;/button&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>声明点击事件的方法，并通过 <code>this.props.自定义事件(传参)</code></p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>子组件方法(v){
+  this.props.自定义事件(&quot;传递的数据&quot;)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li></ol> <h4 id="父组件接值"><a href="#父组件接值" class="header-anchor">#</a> 父组件接值</h4> <ol><li><p>子组件标签内，使用自定事件，不加on</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;子组件 自定义事件={this.父组件方法.bind(this)}&gt;&lt;/子组件&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>父组件中声明子组件自定义事件触发的方法</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>父组件方法(v){
+  //形参v就是子组件传递的数据
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li></ol> <h2 id="组件的生命周期"><a href="#组件的生命周期" class="header-anchor">#</a> 组件的生命周期</h2> <p>分为三个大阶段，每个大阶段又有若干小阶段</p> <p>render会被执行两次</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>// 当对象刚刚类创建出来的时候
+constructor(){
+  super()
+  console.log(&quot;生命周期的第一个阶段---刚刚创建出来&quot;)
+  //作用：就是为了初始化state的数据
+}
+
+// 组件即将渲染【没用，现在已经废弃了】
+UNSAFE_componentWillMount(){
+  console.log(&quot;生命周期的第二个阶段---组件即将渲染&quot;)
+}
+
+// 组件正在渲染
+render(){
+  console.log(&quot;生命周期的第三个阶段---组件正在渲染&quot;)
+}
+
+// 组件渲染完毕
+componentDidMount(){
+  // react官方要求，推荐在componentDidMount中请求数据
+  console.log(&quot;生命周期的第四个阶段---组件渲染完毕&quot;)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="修改阶段的生命周期"><a href="#修改阶段的生命周期" class="header-anchor">#</a> 修改阶段的生命周期</h3> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React, { Component } from &quot;react&quot;;
+
+export default class Child extends Component {
+  constructor() {
+    super();
+    this.state = {
+      num: 1,
+    };
+  }
+  dian() {
+    this.setState({
+      num: &quot;苏东旭&quot;,
+    });
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log(&quot;修改的第一阶段：可以修改么&quot;);
+    if (this.state.num === nextState.num) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  UNSAFE_componentWillUpdate() {
+    console.log(&quot;修改的第二阶段：即将修改【已废弃】&quot;);
+  }
+
+  render() {
+    console.log(&quot;修改的第三阶段：正在修改&quot;);
+    return (
+      &lt;div&gt;
+        Child
+        &lt;p&gt;{this.state.num}&lt;/p&gt;
+        &lt;button onClick={this.dian.bind(this)}&gt;按钮&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+  componentDidUpdate() {
+    console.log(&quot;修改的第四阶段：修改完毕&quot;);
+  }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h3 id="销毁阶段的生命周期"><a href="#销毁阶段的生命周期" class="header-anchor">#</a> 销毁阶段的生命周期</h3> <p>主要用于释放数据、清空缓存</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>componentWillUnmount() {
+  // 释放数据 清空缓存
+  console.log(&quot;被销毁了&quot;);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="context上下文传值"><a href="#context上下文传值" class="header-anchor">#</a> context上下文传值</h2> <p>利用 context 完成 多层父子组件传值</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>// ctx.js 哪个组件使用就引入
+import {createContext} from &quot;react&quot;
+const ctx = createContext()
+
+export default ctx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>ctx有两个组件(标签)</p> <p>Provider	发送</p> <p>Consumer	接收</p> <h3 id="上下传参"><a href="#上下传参" class="header-anchor">#</a> 上下传参</h3> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;ctx.Provider&gt;&lt;/ctx.Provider&gt;
+&lt;ctx.Consumer&gt;&lt;/ctx.Consumer&gt;
+
+let {Provider,Consumer} = ctx;
+&lt;Provider&gt;&lt;/Provider&gt;
+&lt;Consumer&gt;&lt;/Consumer&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="父辈传参"><a href="#父辈传参" class="header-anchor">#</a> 父辈传参</h4> <div class="language-react line-numbers-mode"><pre class="language-text"><code>// 被provider包裹的
+return (
+	&lt;Provider value={{name=&quot;苏东旭&quot;}}&gt;
+  
+  &lt;/Provider&gt;
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="后代接参"><a href="#后代接参" class="header-anchor">#</a> 后代接参</h4> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import ctx from './ctx'
+
+return (
+	&lt;div&gt;
+    &lt;Consumer&gt;
+    	{
+        (value)=&gt;{
+          return (&lt;h2&gt;{value}&lt;/h2&gt;)
+        }
+      }
+    &lt;/Consumer&gt;
+	&lt;/div&gt;
+)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="下往上传"><a href="#下往上传" class="header-anchor">#</a> 下往上传</h3> <blockquote><p>父辈传参时传一个函数，并声明一下该函数，函数的形参就是将来后代传递过来的数据</p> <p>后代在函数的形参处传值</p></blockquote> <h4 id="后代传值"><a href="#后代传值" class="header-anchor">#</a> 后代传值</h4> <div class="language-react line-numbers-mode"><pre class="language-text"><code>&lt;Consumer&gt;
+	{
+    (value)=&gt;{
+      return (
+      	&lt;h2 onClick={()=&gt;{value.fn('后代数据')}}&gt;&lt;/h2&gt;
+      )
+    }
+  }
+&lt;/Consumer&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h4 id="父辈接参"><a href="#父辈接参" class="header-anchor">#</a> 父辈接参</h4> <div class="language-react line-numbers-mode"><pre class="language-text"><code>方法名(形参){
+  console.log(形参)
+}
+
+
+&lt;Provider value={{fn:this.方法名.bind(this)}}&gt;
+
+&lt;/Provider&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="函数式组件"><a href="#函数式组件" class="header-anchor">#</a> 函数式组件</h2> <p>react里面组件分两种</p> <ul><li><p>类式组件</p></li> <li><p>函数式组件</p> <ul><li>不能用this，它指向window
+<ul><li>函数式组件有问题，里面没有类式组件那样丰富的this</li> <li>react 推出技术 Hook 代替this的各种方法</li> <li>Hook 是一堆函数的集合</li></ul></li> <li>写的都是js原生，数据不是响应式的</li></ul></li></ul> <h3 id="hook-响应式数据"><a href="#hook-响应式数据" class="header-anchor">#</a> Hook 响应式数据</h3> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React,{useState} from &quot;react&quot;
+//useState 让数据变成响应式
+
+//使用
+let [变量名,修改变量的回调] = useState(默认值)
+
+修改变量的回调(变量名)   //让这个变量变成响应式数据
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>案例</li></ul> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React, { useState } from &quot;react&quot;;
+
+export default function App1() {
+  let [num, setNum] = useState(10);
+  const dian = () =&gt; {
+    num++;
+    setNum(num);
+  };
+  return (
+    &lt;div&gt;
+      App1
+      &lt;p&gt;{num}&lt;/p&gt;
+      &lt;button onClick={dian}&gt;按钮&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="父子组件传值"><a href="#父子组件传值" class="header-anchor">#</a> 父子组件传值</h3> <h4 id="父传子-2"><a href="#父传子-2" class="header-anchor">#</a> 父传子</h4> <ol><li><p>给儿子自定义属性</p></li> <li><p>儿子在函数参数位置接取props</p></li></ol> <div class="language-react line-numbers-mode"><pre class="language-text"><code>// 父	
+&lt;子组件 属性名=&quot;传递的数据&quot; }&gt;&lt;/子组件&gt;
+
+//子
+export default function 函数名(props){
+  let {属性名} = props
+  console.log(属性名)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="子传父-2"><a href="#子传父-2" class="header-anchor">#</a> 子传父</h4> <ol><li><p>给儿子传函数</p></li> <li><p>儿子调用函数传值</p></li></ol> <div class="language-react line-numbers-mode"><pre class="language-text"><code>// 父	
+&lt;子组件 方法名={(形参)=&gt;{console.log(形参)}}&gt;&lt;/子组件&gt;
+
+// 子
+export default function 函数名(props){
+  let {方法名} = props
+  return (
+  	&lt;button onClick={()=&gt;{方法名('传递的数据')}}&gt;契机&lt;/button&gt;
+  )
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="hook-多级组件传值"><a href="#hook-多级组件传值" class="header-anchor">#</a> Hook 多级组件传值</h3> <p>ctx.js</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import {createContext} from &quot;react&quot;
+const ctx = createContext()
+
+export default ctx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>父辈组件</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React from &quot;react&quot;;
+import Baba from &quot;./Baba&quot;;
+import ctx from &quot;./ctx&quot;;
+let { Provider } = ctx;
+export default function Yeye() {
+  const jie = (v) =&gt; {
+    console.log(v);
+  };
+  return (
+    &lt;Provider value={{ name: &quot;苏东旭&quot;, fn: jie }}&gt;
+      &lt;div&gt;
+        yeye
+        &lt;hr /&gt;
+        &lt;Baba /&gt;
+      &lt;/div&gt;
+    &lt;/Provider&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>中间</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React from &quot;react&quot;;
+import Son from &quot;./Son&quot;;
+export default function Baba() {
+  return (
+    &lt;div&gt;
+      Baba
+      &lt;hr /&gt;
+      &lt;Son&gt;&lt;/Son&gt;
+      &lt;Sunzi /&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>后代组件</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React from &quot;react&quot;;
+import { useContext } from &quot;react&quot;;
+import ctx from &quot;./ctx&quot;;
+
+export default function Son() {
+  const value = useContext(ctx);
+  return (
+    &lt;div&gt;
+      Son
+      &lt;p&gt;{value.name}&lt;/p&gt;
+      &lt;button
+        onClick={() =&gt; {
+          value.fn(&quot;苏东旭&quot;);
+        }}
+      &gt;
+        契机
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="hook模拟生命周期"><a href="#hook模拟生命周期" class="header-anchor">#</a> Hook模拟生命周期</h3> <p>componentDidMount 请求数据 组件渲染完毕</p> <p>componentDidUpdate 数据更新完毕</p> <p>componentWillUnmount 页面关闭的时候</p> <p>useEffect(回调函数，数组)</p> <ol><li>第二个参数是空数组 [] ，不监听任何一个数据的变化 代替 componentDidMount</li> <li>第二个参数不写，监听所有内容，代替componentDidUpdate</li> <li>第二个参数 非空数组[有内容]  只监听 [] 里面的数据的改变 类似watch，不代替任何一个生命周期</li> <li>如果里面有return 函数，代表页面关闭的时候执行 代替componentWillUnmount</li></ol> <p>useEffect做请求数据，一定是空数组</p> <h3 id="hook获取dom元素"><a href="#hook获取dom元素" class="header-anchor">#</a> Hook获取DOM元素</h3> <p>useRef 获取DOM元素</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React from &quot;react&quot;;
+import { useRef } from &quot;react&quot;;
+
+export default function App6() {
+  const inp = useRef();
+  const box = useRef();
+
+  const dian = () =&gt; {
+    console.log(inp.current.value);
+    console.log(box.current);
+  };
+
+  return (
+    &lt;div&gt;
+      App6
+      &lt;input type=&quot;text&quot; ref={inp} /&gt;
+      &lt;div ref={box}&gt;盒子&lt;/div&gt;
+      &lt;button onClick={dian}&gt;获取dom&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="hook-计算属性"><a href="#hook-计算属性" class="header-anchor">#</a> Hook 计算属性</h3> <p>useMemo(回调函数，[监听的内容])</p> <div class="language-react line-numbers-mode"><pre class="language-text"><code>import React from &quot;react&quot;;
+import { useMemo } from &quot;react&quot;;
+import { useState } from &quot;react&quot;;
+
+export default function App7() {
+  const [num, setNum] = useState(10);
+  let total = useMemo(() =&gt; {
+    return num * 2;
+  }, [num]);
+  return (
+    &lt;div&gt;
+      &lt;p&gt;{num}&lt;/p&gt;
+      &lt;p&gt;{total}&lt;/p&gt;
+      &lt;button
+        onClick={() =&gt; {
+          setNum(num + 1);
+        }}
+      &gt;
+        按钮
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h2 id="路由"><a href="#路由" class="header-anchor">#</a> 路由</h2> <h3 id="安装路由"><a href="#安装路由" class="header-anchor">#</a> 安装路由</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">npm</span> <span class="token function">install</span> react-router-dom@6
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>在 src/router/index.jsx</li></ul> <div class="language-react line-numbers-mode"><pre class="language-text"><code>// 先安装路由 npm i react-router-dom@6
+
+// 引入三个路由组件
+import { BrowserRouter, Routes, Route } from &quot;react-router-dom&quot;;
+
+// BrowserRouter 指定路由模式 HashRouter 两种路由模式
+// Routes 路由表
+// Route 路由
+
+// 1. 引入要跳转的组件
+
+import Home from &quot;../views/router/Home&quot;;
+import User from &quot;../views/router/User&quot;;
+
+// 2. 创建路由
+const router = (
+  &lt;BrowserRouter&gt;
+    &lt;Routes&gt;
+      &lt;Route path=&quot;/&quot; element={&lt;Home /&gt;}&gt;&lt;/Route&gt;
+      &lt;Route path=&quot;/user&quot; element={&lt;User /&gt;}&gt;&lt;/Route&gt;
+    &lt;/Routes&gt;
+  &lt;/BrowserRouter&gt;
+);
+
+export default router;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h1 id="笔记"><a href="#笔记" class="header-anchor">#</a> 笔记</h1> <h2 id="jsx语法"><a href="#jsx语法" class="header-anchor">#</a> JSX语法</h2> <h2 id="组件传值"><a href="#组件传值" class="header-anchor">#</a> 组件传值</h2> <h2 id="生命周期函数"><a href="#生命周期函数" class="header-anchor">#</a> 生命周期函数</h2> <h2 id="路由原理"><a href="#路由原理" class="header-anchor">#</a> 路由原理</h2> <h2 id="react路由"><a href="#react路由" class="header-anchor">#</a> React路由</h2> <h2 id="redux状态管理"><a href="#redux状态管理" class="header-anchor">#</a> Redux状态管理</h2> <h2 id="类组件"><a href="#类组件" class="header-anchor">#</a> 类组件</h2> <h2 id="函数式组件-2"><a href="#函数式组件-2" class="header-anchor">#</a> 函数式组件</h2> <h2 id="常用hooks"><a href="#常用hooks" class="header-anchor">#</a> 常用Hooks</h2> <h2 id="高阶组件"><a href="#高阶组件" class="header-anchor">#</a> 高阶组件</h2> <h2 id="项目"><a href="#项目" class="header-anchor">#</a> 项目</h2> <p>create-react-app + material-UI框架</p> <p>利用postcss-px2rem实现移动端适配及ipad适配的兼容的解决方案</p> <p>使用函数式组件和类组件写封装登录组件、注册组件、alert提示组件、tabbar组件等常用组件</p> <p>技术要点 用了Hook哪些内容 做了什么</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/nodes/nodes-typescript.html" class="prev">
+        TypeScript
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e3beb18f.js" defer></script><script src="/assets/js/2.60db63f0.js" defer></script><script src="/assets/js/29.858b2ac2.js" defer></script>
+  </body>
+</html>
